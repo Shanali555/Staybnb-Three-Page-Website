@@ -1,0 +1,665 @@
+// house****************************************************************************
+.house-main-container {
+    box-sizing: border-box;
+
+    nav {
+        box-shadow: 0px 10px 20px #888888;
+        background: #faf8f8;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+        #logo {
+            width: 170px;
+            height: 45px;
+            margin: 10px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                list-style: none;
+                margin: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-align: center;
+                    opacity: 1;
+
+                    &:hover {
+                        color: #f84545;
+                    }
+                }
+            }
+        }
+
+        #rg-btn {
+            list-style: none;
+            text-decoration: none;
+            margin-left: 140px;
+            font-size: 16px;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #fff;
+            background-color: #f84545;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        #menuIcon {
+            display: none;
+        }
+
+        #closeIcon {
+            display: none;
+        }
+    }
+
+    .house-sub-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .wenge-house {
+            margin-top: 50px;
+            width: 80%;
+
+            #wenge-house-content {
+                padding: 5px;
+                color: #000;
+
+                h1 {
+                    font-size: 40px;
+                    font-weight: 500;
+                    line-height: 50px;
+                }
+
+                p {
+                    font-size: 16px;
+
+                    span {
+                        color: #f84545;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .wenge-house-pictures {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                height: 50vh;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px;
+
+                #hleft-pic {
+                    border-radius: 20px;
+                    background-image: url(./Images/house-1.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .hright-pics {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 20px;
+
+                    #hright-pic1 {
+                        background-image: url(./Images/house-2.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 20px;
+                    }
+
+                    #hright-pic2 {
+                        background-image: url(./Images/house-3.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 20px;
+                    }
+
+                    #hright-pic3 {
+                        background-image: url(./Images/house-4.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 20px;
+                    }
+
+                    #hright-pic4 {
+                        background-image: url(./Images/house-5.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .rental {
+        width: 80%;
+        height: 14vh;
+        display: flex;
+        justify-content: space-between;
+
+        #rental-details {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-bottom: 1px solid rgb(168, 163, 163);
+            width: 75%;
+
+            h1 {
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 50px;
+            }
+        }
+
+        #rental-price {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+    }
+
+    .check-availability {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        box-shadow: 10px -10px 20px #d4d0d0, -10px 10px 20px #d4d0d0, -10px -10px 20px #d4d0d0, 10px 10px 20px #d4d0d0;
+        width: 80%;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+
+        #check-availability-left {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            h1 {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 40px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        #check-availability-right {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                width: 80%;
+                height: 60px;
+                text-decoration: none;
+                color: #fff;
+                background-color: #f84545;
+                border-radius: 10px;
+                text-align: center;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .home-enhanced {
+        margin-top: 30px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+        .enter-home {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: 15px;
+        }
+
+        .entire-home {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+            a {
+                font-size: 30px;
+                color: #5e5b5b;
+            }
+
+            h1 {
+                font-size: 22px;
+                font-weight: 600;
+                color: #5e5b5b;
+            }
+
+            p {
+                font-size: 16px;
+                color: #5e5b5b;
+            }
+        }
+
+        #great-check {
+            width: 75%;
+            height: 15vh;
+            border-bottom: 1px solid rgb(168, 163, 163);
+        }
+    }
+
+    .paragraph {
+        width: 80%;
+
+        .para-sub {
+            padding-top: 20px;
+            padding-bottom: 50px;
+            text-align: left;
+            font-size: 16px;
+            color: #5e5b5b;
+            width: 75%;
+            border-bottom: 1px solid rgb(168, 163, 163);
+        }
+    }
+
+    .location-map {
+        margin-top: 30px;
+        width: 80%;
+
+        h1 {
+            font-size: 35px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        #location-map-sub {
+            padding-top: 20px;
+            padding-bottom: 50px;
+            text-align: left;
+            font-size: 16px;
+            width: 75%;
+            border-bottom: 1px solid rgb(168, 163, 163);
+
+            b {
+                line-height: 30px;
+            }
+        }
+    }
+
+    .host-brandon {
+        width: 80%;
+        margin-top: 50px;
+        margin-bottom: 70px;
+        display: flex;
+
+        #host-brandon-left {
+            margin-right: 15px;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        #host-brandon-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            #hb-right-content {
+                margin-top: 25px;
+
+                h1 {
+                    font-size: 30px;
+                    font-weight: 500;
+                    line-height: 40px;
+                }
+
+                p {
+                    font-size: 16px;
+
+                    span {
+                        color: #f84545;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            #hb-right-btn {
+                margin-top: 60px;
+
+                a {
+                    color: #000;
+                    text-decoration: none;
+                    font-size: 20px;
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #f84545;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #copyright-icons {
+            border-bottom: 1px solid #5e5b5b;
+            width: 85%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                font-size: 30px;
+                color: #5e5b5b;
+                margin: 10px;
+
+                &:hover {
+                    color: #f84545;
+                }
+            }
+        }
+
+        #copyright-content {
+            width: 85%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                font-size: 20px;
+                font-weight: 500;
+
+                span {
+                    font-weight: 600;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+
+}
+
+// Media Query Housing
+@media only screen and (max-width: 768px) {
+    .house-main-container {
+        nav {
+            justify-content: space-between;
+            position: relative;
+            background-color: #faf8f8;
+
+            //    ///////////////////////////
+            .menu-box {
+                // border: 2px solid red;
+                background-color: #000;
+                opacity: 0.8;
+                top: 95px;
+                position: absolute;
+                width: 100%;
+                height: 0;
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                #rg-btn {
+                    margin-left: 0px;
+                    margin-top: 20px;
+                    font-size: 25px;
+                    font-weight: 600;
+                    color: #fff;
+                    background-color: green;
+                    border: 1px solid rgb(60, 206, 60);
+
+                }
+
+                li {
+                    &:hover {
+                        transform: translateY(-10px);
+                        transition: transform 0.5s;
+                    }
+
+                    a {
+                        font-size: 35px;
+                        font-weight: 600;
+                        color: #faf8f8;
+
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                }
+            }
+
+
+            /* ******************************************* */
+            .menu-box.open-menu {
+                display: flex;
+                height: 50vh;
+            }
+
+            /* ******************************************* */
+
+            //    ///////////////////////////
+            #menuIcon {
+                display: block;
+                font-size: 30px;
+                color: #fff;
+                background-color: #f84545;
+                text-align: center;
+                margin: 20px;
+                cursor: pointer;
+                width: 60px;
+                border-radius: 50px;
+                padding: 10px;
+            }
+        }
+
+        .house-sub-container {
+            .wenge-house {
+                .wenge-house-pictures {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    height: 80vh;
+                }
+            }
+
+            .rental {
+                #rental-details {
+                    h1 {
+                        font-size: 25px;
+                    }
+                }
+
+                #rental-price {
+                    h1 {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .house-main-container {
+        .house-sub-container {
+            .wenge-house {
+                .wenge-house-pictures {
+                    height: 200vh;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 0.2fr 0.8fr;
+
+                    .hright-pics {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                    }
+                }
+            }
+
+            .rental {
+                #rental-details {
+                    h1 {
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+                }
+
+                #rental-price {
+                    h1 {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .check-availability {
+                box-shadow: 10px -10px 20px #d4d0d0, -10px 10px 20px #d4d0d0, -10px -10px 20px #d4d0d0, 10px 10px 20px #d4d0d0;
+                width: 90%;
+
+                #check-availability-left {
+                    h1 {
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+                #check-availability-right {
+                    a {
+                        font-size: 12px;
+                        width: 90%;
+                        height: 30px;
+
+                    }
+                }
+            }
+
+            .home-enhanced {
+                .entire-home {
+                    a {
+                        font-size: 20px;
+                    }
+
+                    h1 {
+                        font-size: 16px;
+                    }
+                }
+
+                #great-check {
+                    width: 75%;
+                    height: 15vh;
+                    border-bottom: 1px solid rgb(168, 163, 163);
+                }
+            }
+
+            .host-brandon {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                #host-brandon-right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    #hb-right-content {
+                        text-align: center;
+                        margin-top: 5px;
+                    }
+
+                    #hb-right-btn {
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .house-main-container {
+        .house-sub-container {
+            .rental {
+                #rental-details {
+                    h1 {
+                        font-size: 11px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        font-size: 10px;
+                    }
+                }
+
+                #rental-price {
+                    h1 {
+                        font-size: 11px;
+                    }
+                }
+            }
+
+            .home-enhanced {
+                .entire-home {
+                    a {
+                        font-size: 16px;
+                    }
+
+                    h1 {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+        }
+    }
+}
